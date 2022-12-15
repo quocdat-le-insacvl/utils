@@ -8,6 +8,15 @@ with open(file_name, 'r', encoding="utf8") as f:
     lines = f.read().splitlines()
 ```
 # Plotly
+
+## Import 
+```python
+import matplotlib.pyplot as plt
+from plotly.subplots import make_subplots
+import plotly.graph_objects as go
+import plotly.figure_factory as ff
+```
+## 
 ```python
 # Let's set the visualization parameters
 fig_1 = make_subplots(rows=1, cols=1, subplot_titles=("")) # Let's set the number of rows and columns
