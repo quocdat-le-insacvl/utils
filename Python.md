@@ -16,7 +16,7 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
 ```
-## 
+## Display table
 ```python
 def plotly_table(df_, title=""):
     # Let's set the number of rows and columns
@@ -46,4 +46,16 @@ def plotly_table(df_, title=""):
 
     # Displaying the graph
     fig_1.show()
+```
+
+## Pie chart
+```python 
+index, values = [], []
+for type_ in ['string', 'category', 'int64', 'float']:
+    index.append(type_)
+    values.append(len(df.select_dtypes(include=type_).columns))
+df_ = pd.DataFrame({'labels': index,
+                   'values': values
+                  })
+df_.iplot(kind='pie',labels='labels',values='values', title='Data type')
 ```
