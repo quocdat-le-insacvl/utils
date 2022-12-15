@@ -16,6 +16,20 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
 ```
+
+```python
+import plotly.offline as py
+py.init_notebook_mode(connected=True)
+from plotly.offline import init_notebook_mode, iplot
+init_notebook_mode(connected=True)
+import plotly.offline as offline
+offline.init_notebook_mode()
+import cufflinks as cf
+cf.go_offline()
+import plotly.io as pio
+pio.renderers.default = "notebook"
+```
+
 ## Display table
 ```python
 def plotly_table(df_, title=""):
