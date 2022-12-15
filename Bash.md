@@ -1,7 +1,11 @@
 Bash 
 ====
 
-# String Loop
+
+# Loop
+
+## String Loop
+
 ```bash
 ## declare an array variable
 declare -a arr=("element1" 
@@ -17,4 +21,11 @@ do
 done
 
 # You can access them using echo "${arr[0]}", "${arr[1]}" also
+```
+
+# String
+## Declaration
+
+```bash
+name="Jackson"
 ```
