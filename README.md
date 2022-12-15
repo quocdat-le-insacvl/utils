@@ -1,15 +1,3 @@
-# Colab
+# Utils
 
-## Upload
-
-### Choose Files
-```python
-from google.colab import files
-uploaded = files.upload()
-```
-
-### From GDrive
-```python
-from google.colab import drive
-drive.mount('/content/drive')
-```
+A personal library including snippets of code to avoid re-searching for a solved problem.
